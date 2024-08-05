@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    /* background-color: #000; */
+}
+.atm-machine-screen{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to top, #070733,#0b0b64,#1212a7,#6161ee);
+}
+
+.icon{
+    padding: 0.5rem;
+    width: 50px;
+    height: 50px;
+    background-color: #000;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.icon:hover{
+    background-color: green;
+}
+.keysbtn-contaner{
+    width: 20rem;
+    height: 30rem;
+    background-color: #09044d;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.buttons-item{
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 1rem;
+}
+.buttons{
+    color: #fff;
+    height:54px;
+    width: 4rem;
+    display: grid;
+    place-items: center;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    background-color: #070733;
+    border-inline: 5px solid #fff;
+    cursor: pointer;
+}
+.buttons:hover{
+    background-color: #1212a7;
+}
+
+.control{
+    width: 6rem;
+}
+
+.finger{
+    width: 100%;
+    height: 5rem;
+    padding-left: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.sensor-text{
+    width: 40%;
+    align-content: center;
+}
+.sensor-text span{
+    color: #fff;
+    font-size: 1.5rem;
+}
+.thumb-putten{
+    width: 50%;
+    height: 100%;
+    background-color: rgba(70, 233, 70, 0.9);
+    border-radius: 0.7rem;
+}
+
+@media (max-width: 950px){
+    .atm-machine-screen{
+        position: relative;
+        padding-top: 5rem;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        height: 125rem;
+    }
+    .keysbtn-contaner{
+        position: absolute;
+        margin-top: 35rem;
+        width: 30rem;
+    }
+}
+
+.descreption{
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    color: #fff;
+}
+
+
